@@ -58,23 +58,34 @@ nav a:hover {
     padding: 20px;
 }
 
-#profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
-.links {
-    margin-top: 20px;
-}
-
-.links a {
-    font-size: 24px;
-    margin: 10px;
+.floating-buttons a {
+    background: #333;
     color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.links a:hover {
-    color: #0f0;
+.floating-buttons a:hover {
+    background: #444;
+}
+
+.btn-left {
+    position: absolute;
+    left: 20px;
+}
+
+.btn-right {
+    position: absolute;
+    right: 20px;
 }
